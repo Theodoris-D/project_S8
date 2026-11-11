@@ -4,7 +4,7 @@ Rust implementation of the **PUDA** protocol on the BLS12-381 pairing-friendly c
 
 **Reference paper:** I. Leontiadis, K. Elkhiyaoui, M. Önen, R. Molva, *PUDA – Privacy and Unforgeability for Data Aggregation*, CANS 2015, LNCS 9476, pp. 3–18. [PDF (EURECOM)](https://www.eurecom.fr/publication/4672/download/rs-publi-4672_1.pdf) · [EURECOM page](https://www.eurecom.fr/en/publication/4672) · DOI: [10.1007/978-3-319-26823-1_1](https://doi.org/10.1007/978-3-319-26823-1_1)
 
-The protocol design comes from the paper above; this repository contains my implementation, benchmarks and presentation.
+The original PUDA aggregates single values; this implementation follows the vector variant ("PUDA over Vectors") with OPRF key binding from *Verifiable Secure Aggregation with Malicious Clients and Aggregator* (Ben Jaballah, Faonio, Manam, Mansouri, Önen; under submission). The protocol designs come from these papers; this repository contains my implementation, benchmarks and presentation.
 
 ---
 
