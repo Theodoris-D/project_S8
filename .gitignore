@@ -1,0 +1,14 @@
+target/
+**/target/
+__pycache__/
+*.pyc
+.DS_Store
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk

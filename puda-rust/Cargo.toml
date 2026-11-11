@@ -1,0 +1,41 @@
+[package]
+name = "puda"
+version = "0.1.0"
+edition = "2021"
+
+# --- 1. EXPOSER LE CODE SOURCE (src) ---
+[lib]
+name = "puda"
+path = "src/lib.rs"
+
+[[bin]]
+name = "puda"
+path = "src/puda/main.rs"
+
+[[bin]]
+name = "benchmark_runner"
+path = "src/bin/benchmark_runner.rs"
+
+# Standalone KBS binary: work in progress, does not compile yet (see wip/kbs_main.rs).
+# The KBS protocol itself lives in src/puda/kbs.rs and is covered by tests/protocol_tests.rs.
+
+
+[dependencies]
+# --- Arkworks Ecosystem ---
+ark-bls12-381 = "0.4.0"
+ark-ec = "0.4.0"
+ark-ff = "0.4.0"
+ark-poly = "0.4.0"
+ark-std = "0.4.0"
+ark-serialize = "0.4.0" # AJOUTÉ : Indispensable pour transformer les points en bytes
+serde = { version = "1.0", features = ["derive"] }
+
+# --- Crypto & Utils (Pour le protocole KBS) ---
+aes-gcm = "0.10"        # AJOUTÉ : Pour le chiffrement symétrique
+bincode = "1.3"         # AJOUTÉ : Pour sérialiser les messages réseaux
+hex = "0.4"             # AJOUTÉ : Pour l'affichage
+
+# --- Standards ---
+rand = "0.8.5"
+sha2 = "0.10.6"
+clap = { version = "4.5", features = ["derive"] }
