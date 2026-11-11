@@ -123,8 +123,8 @@ use puda::puda::{models, utils, data_aggregator, data_analyzer, user, kbs};
 ## Installation
 
 ```bash
-git clone https://github.com/Theodoris-D/project_S8.git
-cd project_S8/puda-rust
+git clone https://github.com/Theodoris-D/puda-verifiable-aggregation.git
+cd puda-verifiable-aggregation/puda-rust
 cargo build --release
 ```
 
